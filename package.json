@@ -1,0 +1,58 @@
+{
+  "name": "@ignatiusmb/aqua",
+  "author": "Ignatius Bagus",
+  "homepage": "https://aqua.mauss.dev",
+  "description": "Native DOM enhancements to UI using pure JS and CSS",
+  "version": "20.3.3",
+  "license": "MIT",
+  "main": "lib/aqua.min.js",
+  "module": "lib/aqua.esm.js",
+  "unpkg": "lib/aqua.min.js",
+  "jsdelivr": "lib/aqua.min.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "aqua",
+    "DOM",
+    "enhancements",
+    "UI",
+    "pure",
+    "JS",
+    "CSS"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignatiusmb/aqua.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ignatiusmb/aqua/issues"
+  },
+  "scripts": {
+    "bundle": "run-p bundle:**",
+    "bundle:js": "rollup -c",
+    "bundle:css": "postcss src/aqua.css -o lib/aqua.min.css",
+    "docs": "run-p docs:**",
+    "docs:js": "rollup -c -w",
+    "docs:css": "postcss src/aqua.css -o lib/aqua.min.css -w",
+    "prepublishOnly": "npm run bundle",
+    "check": "prettier -c src",
+    "format": "prettier -w src"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^13.0.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.2",
+    "postcss-header": "^2.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
+    "prismjs": "^1.23.0",
+    "rollup": "^2.36.1",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-terser": "^6.1.0"
+  }
+}

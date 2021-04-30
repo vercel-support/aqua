@@ -1,0 +1,37 @@
+{
+  "name": "docs",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "run-s build:*",
+    "build:bundle": "cd .. && npm i && npm run bundle",
+    "build:svelte": "svelte-kit build",
+    "lint": "run-p lint:**",
+    "lint:eslint": "eslint src --ext svelte,js"
+  },
+  "dependencies": {
+    "marqua": "^0.1.2",
+    "mauss": "^0.0.9",
+    "svelement": "^0.0.11"
+  },
+  "devDependencies": {
+    "@ignatiusmb/aqua": "file:..",
+    "@mauss/devtools": "^0.1.0",
+    "@sveltejs/adapter-static": "^1.0.0-next.6",
+    "@sveltejs/kit": "^1.0.0-next.89",
+    "@types/node": "^14.14.21",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.17.0",
+    "eslint-plugin-svelte3": "^3.1.1",
+    "markdown-it": "^11.0.1",
+    "npm-run-all": "^4.1.5",
+    "svelte": "^3.31.2",
+    "svelte-preprocess": "^4.6.1",
+    "typescript": "^4.1.3",
+    "vite": "^2.2.2"
+  }
+}
