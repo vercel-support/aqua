@@ -1,15 +1,4 @@
 {
 	"version": 2,
-	"builds": [
-		{
-			"src": "package.json",
-			"use": "@vercel/static-build",
-			"config": {
-				"useBuildUtils": "https://files-bzn7t3fcb-tootallnate.vercel.app/",
-				"framework": "sapper",
-				"zeroConfig": true
-			}
-		}
-	],
-	"build": { "env": { "FORCE_BUILD_IN_REGION": "sfo1", "VERCEL_DEBUG": "1" } }
+	"build": { "env": { "FORCE_BUILDER_TAG": "canary", "VERCEL_DEBUG": "1" } }
 }
